@@ -1,18 +1,87 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Minha pagina Html</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Contato</title>
+    </head>
 
-<body>
-    <h2>Bruno Deiró</h2>
-    <label>Eu sou o Label</label>
-    <hr>
-    <p>Eu sou a tag de paragrafo</p>
-    <button>Eu sou a tag de botão</button>
+    <style>
+        form {
+            margin:0 auto;
+            width: 400px;
+            border: 1px solid gray;
+            border-radius: 1px;
+            padding: 10px;
+            background-color: cornsilk;
+        }
 
-</body>
+        form div + div {
+            margin-top: 15px;
+        }
+
+        label{
+            text-align: right;
+            display: inline-block;
+            width: 80px;
+        }
+
+        textarea{
+            font: 12px sans-serif;
+            width: 300px;
+            border: 1px solid teal;
+            border-radius: 3px;
+            box-sizing: border-box;
+            vertical-align: top;
+            height: 100px;    
+        }
+
+        button{
+            margin-left: 330px;           
+        }
+
+        input{
+            width: 295px;
+            border: 1px solid teal;
+        }
+
+        h3{
+            text-align: center;
+        }
+
+        body{
+            background-color: rgb(142, 207, 207);
+        }
+
+    </style>
+
+    <body>        
+        <div id="form_contato">    
+            <form action="Contato.php" method="GET">
+                <div name="titulo">
+                    <h3>Contato</h3>  
+                </div>
+                <div name="nome">
+                    <label>Nome:</label>
+                    <input type="text" id="nome_cliente" placeholder="Digite o seu nome"/>
+                </div>
+
+                <div name="email">
+                    <label>E-mail:</label>
+                    <input type="email" id="email_cliente" placeholder="Digite o seu email"/>
+                </div>
+
+                <div name="mensagem">
+                    <label>Mensagem:</label>
+                    <textarea id="mensagem_cliente" placeholder="Escreva aqui"></textarea>
+                </div>
+
+                <div name="botão">
+                    <button id="botao_enviar">Enviar</button>
+                </div>
+            </form>
+        </div>        
+
+    </body>
 
 </html>
