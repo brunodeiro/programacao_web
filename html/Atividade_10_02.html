@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Pokesystem</title>
+</head>
+<style>
+    form {
+        margin:0 auto;
+        width: 400px;
+        border: 1px solid gray;
+        border-radius: 1em;
+        padding: 10px;
+        background-color: cornsilk;
+    }
+
+    form div + div {
+        margin-top: 15px;
+    }
+
+    label{
+        text-align: right;
+        display: inline-block;
+        width: 80px;
+    }
+
+    textarea{
+        font: 12px sans-serif;
+        width: 300px;
+        border: 1px solid teal;
+        border-radius: 3px;
+        box-sizing: border-box;
+        vertical-align: top;
+        height: 100px;    
+    }
+    
+    button{
+        margin-left: 330px;           
+    }
+
+    input{
+        width: 295px;
+        border: 1px solid teal;
+    }
+
+    h3{
+        text-align: center;
+    }
+
+    body{
+        background-color: rgb(142, 207, 207);
+    }
+    #poder input{
+        width: 50px;
+    }
+    #evolucao input{
+        width: 20px;
+    }
+
+</style>
+<body>
+    <div id="form_pokesystem" >
+        <form action="pokesystem.php" method="get">
+            <div name="titulo">
+                <h3>Pokesystem</h3>
+            </div>
+
+            <div name="Nome">
+                <label>Nome:</label>
+                <input type="text" id="nome_user" placeholder="Digite o nome do pokemon"/>                
+            </div>    
+
+            <div name="Tipo">
+                <label>Tipo:</label>
+                <select id="tipo">
+                    <option value="">--Selecione</option>
+                    <option value="Eletrico" id="tipo_eletrico">Elétrico</option>
+                    <option value="Fogo" id="tipo_fogo">Fogo</option>
+                    <option value="Agua" id="tipo_agua">Água</option>
+                    <option value="Terra" id="tipo_terra">Terra</option>
+                    <option value="Gelo" id="tipo_gelo">Gelo</option>
+                    <option value="Psíquico" id="tipo_psiquico">Psíquico</option>
+                    <option value="Planta" id="tipo_planta">Planta</option>
+                </select>
+            </div>
+
+            <div id="poder">
+                <div name="ataque">
+                    <label>Ataque:</label>
+                    <input type="number" id="ataque" placeholder="0-100"/>
+                    <label>Evoluido</label>
+                </div>
+                
+                <div name="defesa">
+                    <label>Defesa:</label>
+                    <input type="number" id="defesa" placeholder="0-100"/>
+                    <input type="radio" name="evoluido">Sim
+                    <input type="radio" name="evoluido">Não
+                </div>
+            </div>
+
+            
+
+            <div name="Descrição">
+                <label>Descrição:</label>
+                <textarea id="Descrição_pokemon" placeholder="Quais as características do seu pokemon ?" cols="30" rows="10"></textarea>
+            </div>
+
+            <div name="botão">
+                <button id="botao_salvar">Salvar</button>
+            </div>
+        </form>
+    </div>    
+</body>
+</html>
