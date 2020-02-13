@@ -56,5 +56,38 @@
 </form>
 </div>     */}
 
-var chef = document.getElementById(app)
+//Exemplo de dados
+useradmin='admin'
+usersenha='admin'
+
+var menu = document.getElementById("app")
+
+var loginEl = document.createElement("input")
+loginEl.setAttribute("type","text")
+loginEl.setAttribute("placeholder","Digite seu login")
+loginEl.setAttribute("id","login") 
+menu.appendChild(loginEl)
+
+var senhaEL = document.createElement("input")
+senhaEL.setAttribute("type","password")
+senhaEL.setAttribute("placeholder","Digite a sua senha")
+senhaEL.setAttribute("id","senha")
+menu.appendChild(senhaEL)
+
+var entrarEl = document.createElement("button")
+entrarEl.innerHTML = "Entrar";
+entrarEl.setAttribute("onclick", "checarlogin()")
+menu.appendChild(entrarEl)
+
+
+
+function checarlogin(){
+   if ((useradmin === login.value) && (usersenha === senha.value)){
+       alert("Olá " + login.value + " Seja bem vindo !")
+   }
+   else{
+       alert("Login ou senha incorreto !")
+   }
+
+}
 
