@@ -1,0 +1,57 @@
+form {
+    margin: -130px 0 0 -210px;
+    left: 50%; 
+    top: 50%; 
+    width: 400px;
+    border: 1px solid gray;
+    border-radius: 1em 0 1em 0;
+    padding: 10px;
+    background-color: rgb(218, 94, 94);
+    position: absolute; 
+    }
+
+form div + div {
+    margin-top: 15px;
+}
+
+label{
+    text-align: right;
+    display: inline-block;
+    width: 80px;
+}
+
+textarea{
+    font: 12px sans-serif;
+    width: 300px;
+    border: 1px solid teal;
+    border-radius: 3px;
+    box-sizing: border-box;
+    vertical-align: top;
+    height: 100px;    
+}
+
+button{
+    margin-left: 330px;
+    border-radius: 3em;           
+}
+
+input{
+    width: 295px;
+    border: 1px solid teal;
+    border-radius: 3px;
+}
+
+h3{
+    text-align: center;
+}
+
+body{
+    background-color: rgb(142, 207, 207);
+}
+select{
+        border-radius: 3px;
+
+    }
+#poder input{
+    width: 50px;
+}
