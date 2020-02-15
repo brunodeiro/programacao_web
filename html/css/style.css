@@ -3,6 +3,7 @@ form {
     left: 50%; 
     top: 50%; 
     width: 400px;
+    height: 300px;
     border: 1px solid gray;
     border-radius: 1em 0 1em 0;
     padding: 10px;
@@ -30,10 +31,10 @@ textarea{
     height: 100px;    
 }
 
-/* button{
-    margin-left: 330px;
+button{
+    /* margin-left: 330px; */
     border-radius: 3em;           
-} */
+}
 
 input{
     width: 295px;

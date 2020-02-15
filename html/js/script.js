@@ -62,22 +62,50 @@ usersenha='admin'
 
 var menu = document.getElementById("app")
 
+var form = document.createElement("form")
+form.setAttribute("method", "get")
+form.setAttribute("action", "pokesystem.php")
+menu.appendChild(form)
+
+var tituloEl = document.createElement("h3")
+tituloEl.setAttribute("id", "pokesystem")
+tituloEl.innerText = "PokeSystem"
+form.appendChild(tituloEl)
+
+var nomeEl = document.createElement("label")
+nomeEl.innerText = "Nome: "
+form.appendChild(nomeEl)
+
 var loginEl = document.createElement("input")
 loginEl.setAttribute("type","text")
-loginEl.setAttribute("placeholder","Digite seu login")
+loginEl.setAttribute("placeholder","Digite o nome do seu Pokemon")
 loginEl.setAttribute("id","login") 
-menu.appendChild(loginEl)
+form.appendChild(loginEl)
 
-var senhaEL = document.createElement("input")
-senhaEL.setAttribute("type","password")
-senhaEL.setAttribute("placeholder","Digite a sua senha")
-senhaEL.setAttribute("id","senha")
-menu.appendChild(senhaEL)
+var tipoLabelEl = document.createElement("label")
+tipoLabelEl.innerText = "Tipo: "
+form.appendChild(tipoLabelEl)
+
+
+// var opt = ["--Selecione","eletrico","fogo","agua","terra","gelo","psiquico","planta"]
+// var tipoEl = document.createElement("select")
+
+// tipoEl.value = opt[i]
+// tipoEl.text = opt[i]
+// // tipoEl.setAttribute("option", )
+// form.appendChild(tipoEl)
+
+
+// var senhaEL = document.createElement("input")
+// senhaEL.setAttribute("type","password")
+// senhaEL.setAttribute("placeholder","Digite a sua senha")
+// senhaEL.setAttribute("id","senha")
+// form.appendChild(senhaEL)
 
 var entrarEl = document.createElement("button")
 entrarEl.innerHTML = "Entrar";
 entrarEl.setAttribute("onclick", "checarlogin()")
-menu.appendChild(entrarEl)
+form.appendChild(entrarEl)
 
 
 
