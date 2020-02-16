@@ -32,7 +32,7 @@ textarea{
 }
 
 button{
-    /* margin-left: 330px; */
+    margin-left: 330px;
     border-radius: 3em;           
 }
 
@@ -40,6 +40,8 @@ input{
     width: 295px;
     border: 1px solid teal;
     border-radius: 3px;
+    margin: 2px;
+    background-color: rgb(203, 248, 248);
 }
 
 h3{
@@ -51,8 +53,15 @@ body{
 }
 select{
         border-radius: 3px;
+        margin: 2px;
+        background-color: rgb(203, 248, 248);
+        border: 1px solid teal;
 
     }
 #poder input{
     width: 50px;
+}
+
+::placeholder {
+    color: rgba(44, 53, 48, 0.534);
 }

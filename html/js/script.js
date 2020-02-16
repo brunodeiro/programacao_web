@@ -3,31 +3,7 @@
 //console.warn
 //console.error
 
-{/* <div id="form_pokesystem" >
-<form action="pokesystem.php" method="get">
-<div id="titulo">
-    <h3>Pokesystem</h3>
-</div>
-
-<div id="nome">
-    <label>Nome:</label>
-    <input type="text" id="nome_user" placeholder="Digite o nome do pokemon"/>                
-</div>    
-
-<div id="tipo">
-    <label>Tipo:</label>
-    <select id="tipo">
-        <option value="">--Selecione</option>
-        <option value="eletrico" id="tipo_eletrico">Elétrico</option>
-        <option value="fogo" id="tipo_fogo">Fogo</option>
-        <option value="agua" id="tipo_agua">Água</option>
-        <option value="terra" id="tipo_terra">Terra</option>
-        <option value="gelo" id="tipo_gelo">Gelo</option>
-        <option value="psiquico" id="tipo_psiquico">Psíquico</option>
-        <option value="planta" id="tipo_planta">Planta</option>
-    </select>
-</div>
-
+{/* 
 <div id="poder">
     <div id="ataque">
         <label>Ataque:</label>
@@ -87,20 +63,19 @@ tipoLabelEl.innerText = "Tipo: "
 form.appendChild(tipoLabelEl)
 
 
-// var opt = ["--Selecione","eletrico","fogo","agua","terra","gelo","psiquico","planta"]
-// var tipoEl = document.createElement("select")
+var opt = ["--Selecione","eletrico","fogo","agua","terra","gelo","psiquico","planta"]
 
-// tipoEl.value = opt[i]
-// tipoEl.text = opt[i]
-// // tipoEl.setAttribute("option", )
-// form.appendChild(tipoEl)
+var tipoEl = document.createElement("select")
+tipoEl.id = "tipo"
+form.appendChild(tipoEl)
 
+for (var x = 0; x <opt.length; x++){ 
+    var optionEl = document.createElement("option")
+    optionEl.value = opt[x];
+    optionEl.text = opt[x];
+    tipoEl.appendChild(optionEl)
+}
 
-// var senhaEL = document.createElement("input")
-// senhaEL.setAttribute("type","password")
-// senhaEL.setAttribute("placeholder","Digite a sua senha")
-// senhaEL.setAttribute("id","senha")
-// form.appendChild(senhaEL)
 
 var entrarEl = document.createElement("button")
 entrarEl.innerHTML = "Entrar";
